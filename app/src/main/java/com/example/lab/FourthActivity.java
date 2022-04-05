@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class SecondActivity extends AppCompatActivity implements View.OnClickListener {
+public class FourthActivity extends AppCompatActivity implements View.OnClickListener {
 
     private TextView mSubHeading, mParagaph;
     private ImageView mImageView;
@@ -31,8 +31,8 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
 
     private void displayTask() {
         Bundle bundle = getIntent().getExtras();
-        mSubHeading.setText("Text One");
-        storeParagaph = bundle.getString("TextOne");
+        mSubHeading.setText("Text Three");
+        storeParagaph = bundle.getString("TextThree");
         mParagaph.setText(storeParagaph);
 
     }
@@ -42,7 +42,7 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
 
         if(view.getId()==R.id.imageView)
         {
-            startActivity(new Intent(SecondActivity.this, MainActivity.class));
+            startActivity(new Intent(FourthActivity.this, MainActivity.class));
         }
 
     }
